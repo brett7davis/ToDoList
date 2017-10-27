@@ -1,0 +1,27 @@
+package manager options: npm, yarn (internally uses same repo as npm)
+UI options: react, angular, ember, vue, cycle
+
+timeline -- https://daveceddia.com/how-to-learn-react/
+
+make app: yarn create react-app [your-app-name]
+
+public is where our static assets go, like our favicon. It also houses our project’s only HTML file. 
+Because React is all-javascript, you only really need the HTML file to update the <head> stuff, like title and meta tags.
+
+npm_modules == 3rd party code
+
+src == application lives here
+
+Deployment:
+  1) yarn run build
+    `build` is an NPM script provided by create-react-app.
+    It bundles up your code into ready-to-deploy static files. 
+    If you check the ‘build’ directory in your project, you’ll see what it generates.
+    
+  2) yarn global add surge -- installed globally so we can use its cli tool
+  
+  3) project path -- run "surge"
+  
+  4) in package.json, under scripts, add "deploy": "yarn run build && surge -p build -d your-domain.surge.sh"
+  
+  
