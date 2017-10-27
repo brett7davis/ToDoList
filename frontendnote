@@ -24,4 +24,17 @@ Deployment:
   
   4) in package.json, under scripts, add "deploy": "yarn run build && surge -p build -d your-domain.surge.sh"
   
-  
+Flux
+  1 -- unidirectional data flow
+  2 -- seperation of concerns
+  3 -- good for declarative programming 
+----> redux is standard state management library
+App state is described by a single plain old JavaScript object (POJO). 
+Dispatch an action (also a POJO) to modify the state. 
+Reducer is a pure function that takes in current state and action to produce a new state.
+
+
+
+
+Elements vs Components vs Instances  
+An element is a plain object describing a component instance or DOM node and its desired properties.
